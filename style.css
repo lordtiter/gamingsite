@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B0C10; /* Dark base color */
+    color: #C5C6C7; /* Light grey text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F2833; /* Dark grey-blue */
+    color: #C5C6C7; /* Light grey text */
+    padding: 10px 20px;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #C5C6C7; /* Light grey text */
+    text-decoration: none;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    color: #66FCF1; /* Light cyan for active link */
+}
+
+button {
+    background: #45A29E; /* Teal color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #66FCF1; /* Light cyan hover effect */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-desc {
+    max-width: 500px;
+}
+
+.section-1-img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #1F2833; /* Dark grey-blue */
+    padding: 10px;
+    border: 2px solid #333; /* Regular border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow border */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for zoom and shadow */
+}
+
+.image-container img {
+    width: 100%;
+    height: 180px; /* Adjusted height for smaller grid layout */
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Image zooms slightly more on hover */
+}
+
+.image-container h2 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #C5C6C7; /* Light grey text */
+}
+
+.game-categories h2 {
+    margin: 10px 0;
+    color: #66FCF1; /* Light cyan for category headings */
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #1F2833; /* Dark grey-blue */
+    color: #C5C6C7; /* Light grey text */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul h3 {
+    margin-top: 0;
+    color: #66FCF1; /* Light cyan for section headers */
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background: #0B0C10; /* Dark base color */
+    color: #C5C6C7; /* Light grey text */
+    text-align: center;
+    padding: 10px;
+}
